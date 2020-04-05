@@ -16,3 +16,9 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+
+Route::post('markets','MarketController@create')->name('createMarkets');
+
+Route::get('markets','MarketController@index')->name('indexMarkets');
