@@ -6,5 +6,16 @@ use Illuminate\Http\Request;
 
 class ServerController extends Controller
 {
-    //
+    public function create(Request $request){
+        
+        $server = new Server;
+        $server->name = $request->name;
+        $server->description = $request->description;
+        $server->category_id = $request->category_id;
+        
+        $server->save();
+
+        return $server;
+    
+    }
 }

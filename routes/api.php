@@ -28,3 +28,6 @@ Route::get('markets','MarketController@index')->name('indexMarkets');
 Route::post('categories','CategoryController@create')->name('createCategories');
 
 Route::get('categories/{id}','CategoryController@index')->name('indexCategories');
+
+
+Route::post('servers','ServerController@create')->name('createServers');
