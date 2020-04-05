@@ -22,3 +22,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::post('markets','MarketController@create')->name('createMarkets');
 
 Route::get('markets','MarketController@index')->name('indexMarkets');
+
+
+
+Route::post('categories','CategoryController@create')->name('createCategories');
+
+Route::get('categories/{id}','CategoryController@index')->name('indexCategories');
