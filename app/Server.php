@@ -12,4 +12,7 @@ class Server extends Model
     public function market(){
         return $this->belongsTo(Category::class);
     }
+    public function turns(){
+        return $this->hasMany(Turn::class);
+    }
 }

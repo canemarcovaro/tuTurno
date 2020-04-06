@@ -13,4 +13,9 @@ class Category extends Model
     public function market(){
         return $this->belongsTo(Market::class);
     }
+
+
+
+
+    
 }
