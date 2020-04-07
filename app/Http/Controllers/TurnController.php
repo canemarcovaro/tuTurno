@@ -17,4 +17,12 @@ class TurnController extends Controller
         return $turn;
     
     }
+   public function edit(Request $request, $id){
+    $turn = Turn::findOrFail($id);
+
+    $turn->update($request->all());
+
+    return $turn;
+
+   }
 }

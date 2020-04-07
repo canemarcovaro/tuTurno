@@ -34,3 +34,4 @@ Route::post('servers','ServerController@create')->name('createServers');
 
 
 Route::post('turns','TurnController@create')->name('createTurns');
+Route::put('turns/{id}','TurnController@edit')->name('editTurns');
