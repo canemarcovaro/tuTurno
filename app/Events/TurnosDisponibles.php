@@ -15,16 +15,16 @@ class TurnosDisponibles implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
-    public $turn;
+    public $message;
     /**
      * Create a new event instance.
      *
      * @return void
      */
-    public function __construct(Turn $turn)
+    public function __construct($message)
     {
         
-        $this->turn=$turn;
+        $this->message=$message;
     }
 
     /**
@@ -35,6 +35,6 @@ class TurnosDisponibles implements ShouldBroadcast
     public function broadcastOn()
     {
         
-        return new Channel('turno-disponible');
+        return new Channel('home');
     }
 }

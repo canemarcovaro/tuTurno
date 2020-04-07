@@ -2,7 +2,7 @@
 
 namespace App\Observers;
 
-use App\Events\TurnosDisponibles;
+//use App\Events\TurnosDisponibles;
 use App\Turn;
 
 class Observers
