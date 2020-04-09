@@ -2,7 +2,7 @@
 
 namespace App\Observers;
 
-//use App\Events\TurnosDisponibles;
+use App\Events\TurnosDisponibles;
 use App\Turn;
 
 class Observers
@@ -30,14 +30,14 @@ class Observers
         $oldTurnCode = $turn->getOriginal('code');
         $newTurn = $turn->code;
       //  dd($oldTurnCode);
-      /*  if($oldTurnCode != $newTurn){
+         if($oldTurnCode != $newTurn){
             
             event(new TurnosDisponibles($turn));
 
-        }*/
+        }
         
             
-            event(new TurnosDisponibles($turn));
+            //event(new TurnosDisponibles($turn));
 
         
     }

@@ -33,7 +33,7 @@
 <script>
 Echo.channel('home').listen('TurnosDisponibles', (e) => {
   
- console.log(e.message)
+ console.log(e.turn)
 })
 
 </script>
