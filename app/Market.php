@@ -19,4 +19,13 @@ class Market extends Model implements HasMedia
     public function categories(){
         return $this->hasMany(Category::class);
     }
+     public function addresses(){
+        return $this->hasMany(Address::class);
+    }
+    public function emails(){
+        return $this->hasMany(Email::class);
+    }
+    public function phones(){
+        return $this->hasMany(Phone::class);
+    }
 }
