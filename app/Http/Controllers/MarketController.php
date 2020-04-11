@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Market;
 
+use Illuminate\Support\Facades\DB;
+
 class MarketController extends Controller
 {
     public function create(Request $request){
@@ -19,8 +21,20 @@ class MarketController extends Controller
 
     public function index(Request $request){
         
-        
-        $markets =  Market::all();
+      // $breweries =  Brewerie::join('claps', 'breweries.id', '=', 'claps.brewery_id')->select('breweries.name','breweries.id','breweries.lat','breweries.lon',DB::raw("count(claps.id) as clapsCuantity"))->groupBy('breweries.id')->get();
+        $markets =  Market::join('phones','markets.id','=','phones.market_id')->join('emails','markets.id','=','emails.market_id')->join('addresses','markets.id','=','addresses.market_id')->select('markets.id','markets.name','phones.phone_number','emails.email','addresses.location')->groupBy('markets.id')->get();
+
+        for ($i=0; $i <$markets->count(); $i++) {
+
+            for ($j=0; $j <$markets[$i]->getMedia()->count(); $j++) { 
+             $imgUrl = $markets[$i]["media"][$j]->getFullUrl();
+             
+  
+             $markets[$i]["media"][$j]["imgUrl"] = $imgUrl;
+             
+            }
+          }
+  
 
         return $markets;
     

@@ -3,10 +3,13 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Spatie\MediaLibrary\HasMedia\HasMedia;
+use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
 
-class Market extends Model
+class Market extends Model implements HasMedia
 {
-    
+    use HasMediaTrait;
+        
     protected $table = 'markets';
     protected $fillable = array('name');
 
