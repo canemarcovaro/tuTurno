@@ -24,6 +24,7 @@ Route::post('markets','MarketController@create')->name('createMarkets');
 Route::get('markets','MarketController@index')->name('indexMarkets');
 
 
+Route::get('marketss','MarketController@index2')->name('index2Markets');
 
 Route::post('categories','CategoryController@create')->name('createCategories');
 

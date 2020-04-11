@@ -39,4 +39,14 @@ class MarketController extends Controller
         return $markets;
     
     }
+
+    public function index2(Request $request){
+        
+     
+      $markets =  Market::all();
+
+
+      return $markets;
+  
+  }
 }
