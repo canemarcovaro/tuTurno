@@ -421,6 +421,313 @@ class MarketSeeder extends Seeder
             'market_id' => 20,
         ]); 
 
+        
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 1,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 2,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 3,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 4,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 5,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 6,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 7,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 8,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 9,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 10,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 11,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 12,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 13,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 14,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 15,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 16,
+        ]); 
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 17,
+        ]); 
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 18,
+        ]); 
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 19,
+        ]); 
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 20,
+        ]); 
+
+        
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 1,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 2,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 3,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 4,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 5,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 6,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 7,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 8,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 9,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 10,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 11,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 12,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 13,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 14,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 15,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 16,
+        ]); 
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 17,
+        ]); 
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 18,
+        ]); 
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 19,
+        ]); 
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 20,
+        ]); 
+
+        
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 1,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 2,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 3,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 4,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 5,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 6,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 7,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 8,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 9,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 10,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 11,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 12,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 13,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 14,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 15,
+        ]);
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 16,
+        ]); 
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 17,
+        ]); 
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 18,
+        ]); 
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 19,
+        ]); 
+        DB::table('categories')->insert([
+            'name' => 'Jubilados',
+            'description' => 'Jubilados',
+            'market_id' => 20,
+        ]); 
+
+
 
 
         
