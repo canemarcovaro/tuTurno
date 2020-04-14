@@ -35,16 +35,40 @@ class ServerController extends Controller
         }
 
         //Busco si existen turnos disponibles para atender.
-        $turn = Turn::where('category_id',$category_id)->where('server_id',null)->where('status','wait')->first();
+        $turn = Turn::where('category_id',$category_id)->where('server_id',null)->where('status','next')->first();
 
         //Si existe, llamo a este turno y cambio su estado a ON.
         if($turn != null){
 
          $turn->update(['status' => 'on','server_id'=>$server_id]);
-
+         //Busco el siguiente posible turno para avisarle
+         $nextTurn = Turn::where('category_id',$category_id)->where('server_id',null)->where('status','wait')->first();
+         if($nextTurn != null){
+         //Seteo el siguiente turno en estado next.
+            $nextTurn->update(['status' => 'next']); 
+         }
+         return $turn;
         }
         else{
-            return "No hay turnos en cola actualmente.";
+            //Busco si recien arrancan las operaciones, en ese caso tendria que haber un turno en wait.
+
+            $turn = Turn::where('category_id',$category_id)->where('server_id',null)->where('status','wait')->first();
+            if($turn != null){
+
+                $turn->update(['status' => 'on','server_id'=>$server_id]);
+                //Busco el siguiente posible turno para avisarle
+                $nextTurn = Turn::where('category_id',$category_id)->where('server_id',null)->where('status','wait')->first();
+                if($nextTurn != null){
+                //Seteo el siguiente turno en estado next.
+                   $nextTurn->update(['status' => 'next']); 
+                }
+                else{
+                return "No hay turnos en cola actualmente.";
+                }
+            }
+            else{
+                return "No hay turnos en cola actualmente.";
+            }
         }
 
         return $turn;
@@ -56,4 +80,4 @@ class ServerController extends Controller
      
     }
 
-}
+    }
