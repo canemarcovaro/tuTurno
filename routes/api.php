@@ -33,6 +33,8 @@ Route::get('categories/{id}','CategoryController@index')->name('indexCategories'
 
 Route::post('servers','ServerController@create')->name('createServers');
 
+Route::put('serversturns','ServerController@nextTurn')->name('nextTurn');
+
 
 Route::post('turns','TurnController@create')->name('createTurns');
 Route::put('turns/{id}','TurnController@edit')->name('editTurns');
