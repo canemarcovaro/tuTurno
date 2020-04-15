@@ -20,12 +20,31 @@ class ServerController extends Controller
         return $server;
     
     }
+    public function changeStatusServer(Request $request){
+        
+        $server_id = $request->server_id;
+
+        $server = Server::find($server_id);
+        if($request->status == 'on'){
+            $server->update(['status'=>'on']);
+            return 'Caja encendida con exito.';
+        }
+        else{
+            $server->update(['status'=>'off']);
+            return 'Caja apagada con exito.';
+        }
+    
+    }
+
 
     public function nextTurn(Request $request){
         
         $server_id = $request->server_id;
         $category_id = $request->category_id;
         
+        //Cambiamos el estado del servidor a funcionando.
+        
+
         //Busco el ultimo turno que atendi.
         $beforeTurn = Turn::where('category_id',$category_id)->where('server_id',$server_id)->where('status','on')->first();
 
@@ -67,7 +86,7 @@ class ServerController extends Controller
                 }
             }
             else{
-                return "No hay turnos en cola actualmente.";
+                return "No hay turnos en cola actualmente."; 
             }
         }
 
