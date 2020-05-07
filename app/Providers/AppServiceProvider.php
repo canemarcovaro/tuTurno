@@ -5,6 +5,8 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 use App\Turn;
 use App\Observers\Observers;
+use TCG\Voyager\Http\Controllers\VoyagerBaseController;
+use App\Http\Controllers\MyVoyagerBaseController;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -15,7 +17,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind(VoyagerBaseController::class, MyVoyagerBaseController::class);
     }
 
     /**
